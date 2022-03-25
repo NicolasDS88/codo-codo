@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,31 +8,76 @@
     <title>Document</title>
 </head>
 <body>
+    <main>
 
-<main>
-    <section>
-        <h1>Clase 6</h1>
-        <fieldset>
-            <legend>Alta Usuario</legend>
-            <form action="AltaUsuario.html">
-                <input type="file" name="dni-frente">
-                <input type="hidden" value="valor oculto" name="campoHidden">
-                <input type="url" name="url http://dominio.com.ar">
-                <input type="text" name="nombre" required placeholder="ingrese algo">
-                <input type="text" placeholder="valores entre 0 y 9" required placeholder="[0-9]">
+        <section>
+            <h1>Ejercicio Clase 6</h1>
 
-                <input type="submit" value="Enviar">
+            <!-- Formulario con distinto tipos de Inputs -->
+            <fieldset>
+                <legend><h2>Alta de Usuario</h2></legend>
 
-            </form>
+                <form action="AltaUsuario.html" method="post">
+                    <!-- Nuevos types respecto de Clase5: file, hidden, url -->
+                    <!-- Nuevos atributos: required, pattern, placeholder -->
 
+                    <input type="file" name="Dni-Frente" required>
+                    <input type="hidden" value="ValorOculto" name="CampoHidden">
+                    <input type="url" name="url" placeholder="ej.: http://TuDominio.com" required>
 
-        </fieldset>
-    </section>
+                    <input type="text" name="nombre" placeholder="Ezequiel" required>
 
+                    <input type="text" pattern="[0-9]" placeholder="N&uacute;meros de 0 a 9" required>
+                    <br>
+                    <!-- textarea: espacio para texto libre ingresado por usuario -->
+                    <br>
+                    <textarea name="Agregue lo que deseé aquí" cols="50" rows="10" required></textarea>
+                    <br>
+                    <br>
+                    <!--select+optgroup: permite seleccionar ítems agrupados por un orden dado-->
+                    <select name="Opciones Multiples" multiple required>
+                        <optgroup label="Animales">
+                            <option>León</option>
+                            <option>Tigre</option>
+                            <option>Puma</option>
+                        </optgroup>
+                        <optgroup label="Constelaciones">
+                            <option>Osa Mayor</option>
+                            <option>Orion</option>
+                            <option>Capricornio</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <br>
+                    <!-- Browser: despliaga una lista ingresa por default -->
+                    <!-- El listado no implica opciones excluyentes, puede escribirse algo diferente-->
+                    <input list="Browsers">
+                    <datalist id="Browsers" name="ListBrowsers">
+                        <option>Firefox</option>
+                        <option>Opera</option>
+                        <option>Edge</option>
+                        <option>Chrome</option>
+                    </datalist>
+                    <br>
+                    <br>
+                    <!--type search: agrega al final del box una cruz que permite borrar el texto ingresado-->
+                    <label for="buscar">Tipo Search&emsp;</label>
+                    <input type="search" name="buscar" id="buscar">
+                    <br>
+                    <br>
+                    <label for="text">Tipo Texto  &emsp;</label>
+                    <input type="text" name="texto" id="text">
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <br>
+                    <br>
+                    <legend>¿Necesitas corregir? Usa éste boton&emsp;<input type="reset" value="Borrar"></legend>
+                </form>
 
-</main>
+            </fieldset>
+        </section>
 
-
-    
+    </main>
 </body>
 </html>
