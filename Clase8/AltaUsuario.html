@@ -1,34 +1,86 @@
-<fieldset>
-    <legend>Form con tabla</legend>
-    <form action="../clase4/index.html">
-        <table>
-            <tr>
-                <td colspan="2">
-                    <label>Direccion de email *</label><br>
-                    <input type="email" name="email" placeholder="mail@mail.com">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Nombre *</label><br>
-                    <input type="text" name="nombre" maxlength="100">
-                </td>
-                <td>
-                    <label>Apellido *</label><br>
-                    <input type="text" name="apellido" placeholder="lópez">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Nro de Documento *</label><br>
-                    <input type="number" name="dni" min="0" max="999999999">
-                </td>
-            </tr>
-            <tr>
-                <td>                        
-                    <input type="submit" value="Guardar">
-                </td>
-            </tr>
-        </table>
-    </form>
-</fieldset>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- primer forma 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    -->
+    <!--segunda forma
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+    </style>
+    -->
+    <!--ahora vinculo mi css al html-->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .link {
+            list-style: circle;
+        }
+        .link a {
+            text-decoration: none;
+            font-size: 24px;
+            font-style: italic;
+        }
+        h1 {
+            cursor: pointer;
+        }
+        /*
+        #nosotros {
+            font-family: 'Roboto Slab', serif;
+        }
+        */
+        * {
+            font-family: 'Roboto Slab', serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Titulo de página</h1>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li class="link">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="link">
+                    <a href="#nosotros">Nosotros</a>
+                </li>
+                <li class="link"></li>
+                    <a href="#contacto">Contacto</a>
+                </li> 
+                <li class="link"></li>  
+                    <a href="#imagenes">Imagenes</a>
+                </li>
+                <li class="link"> 
+                    <a href="#articulos">Artículos</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="nosotros">
+            <h2>Seccion sobre nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi, possimus, corrupti repudiandae cupiditate laborum totam dolore odit sequi quas ex tempora quos ipsam commodi nemo eum porro voluptates qui!</p>
+        </section>
+        <section id="contacto">
+            <h2>contacto</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi, possimus, corrupti repudiandae cupiditate laborum totam dolore odit sequi quas ex tempora quos ipsam commodi nemo eum porro voluptates qui!</p>
+        </section>
+        <section id="imagenes">
+            <h2>imagenes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi, possimus, corrupti repudiandae cupiditate laborum totam dolore odit sequi quas ex tempora quos ipsam commodi nemo eum porro voluptates qui!</p>
+        </section>
+        <section id="articulos">
+            <h2>articulos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi, possimus, corrupti repudiandae cupiditate laborum totam dolore odit sequi quas ex tempora quos ipsam commodi nemo eum porro voluptates qui!</p>
+        </section>
+    </main>
+</body>
+</html>
