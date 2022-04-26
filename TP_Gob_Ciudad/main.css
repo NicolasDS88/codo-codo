@@ -6,7 +6,7 @@
 
 /*segunda parte ------------------------------------------------------------------------------------ */
 /*contenedor padre . Nota: tiene la posicion "relativa". */
-.imagen-fondo {
+.imagenFondo {
 
     background: linear-gradient(to right, #0c0c0c73, #0303037e, #12121373), url(imagenes/ba1.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -19,37 +19,41 @@
 }
 /* contenedor hijo. Nota: tiene la posicion "absoluta". De esta forma ante los cambios de dimensiones
 el hijo acompañara al padre, dependen del tipo de posicion*/
-.color-de-las-letras {
-    color: white;
-    text-align: center;
-
-    position: absolute;
-
+.colorLetrasImagen {
     top: 50%;
     left: 55%;
     right: 5%;
+    color: white;
+    text-align: center;
+    position: absolute;
+
 
     transform: translate(-10%, -50%);
     position: absolute;
 }
-.contenedorColor{
+.contenedorHono{
     background: #353A40;
 
 }
-.letrah{
+.letraHonolulu{
     color: rgb(255, 255, 255);
     position: absolute;
 }
 
-.colorcito{
+.colorSubmit{
     color: antiquewhite;
-    background-color: #96c93e;
+    background-color: #4ed16f;
     
 }
 
 footer {
     text-align: center;
     padding: 3px;
-    background-color: #1e5170;
+    background-color: #0a3a58;
     color: white;
+  }
+
+  u.dotted{
+    border-bottom: 1px dashed #999;
+    text-decoration: none; 
   }
