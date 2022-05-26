@@ -1,10 +1,17 @@
 
+<<<<<<< HEAD
 /*---------------primer parte--------------------------------------- */
+=======
+
+>>>>>>> da6325da6cdd5d3cfec90687f9938a0041f62dbe
 .colorContenedor {
     background-color: #353A40;
 }
 
+<<<<<<< HEAD
 /*--------------segunda parte -------------------------------------- */
+=======
+>>>>>>> da6325da6cdd5d3cfec90687f9938a0041f62dbe
 
 .imagen-fondo {
 
@@ -55,4 +62,8 @@ footer {
     background-color: #1e5170;
     color: white;
     background-image: linear-gradient(to right, rgb(36, 59, 66), rgb(36, 63, 119))
+<<<<<<< HEAD
   }
+=======
+  }
+>>>>>>> da6325da6cdd5d3cfec90687f9938a0041f62dbe
