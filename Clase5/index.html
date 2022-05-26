@@ -1,34 +1,91 @@
-<fieldset>
-    <legend>Form con tabla</legend>
-    <form action="../clase4/index.html">
-        <table>
-            <tr>
-                <td colspan="2">
-                    <label>Direccion de email *</label><br>
-                    <input type="email" name="email" placeholder="mail@mail.com">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Nombre *</label><br>
-                    <input type="text" name="nombre" maxlength="100">
-                </td>
-                <td>
-                    <label>Apellido *</label><br>
-                    <input type="text" name="apellido" placeholder="lópez">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Nro de Documento *</label><br>
-                    <input type="number" name="dni" min="0" max="999999999">
-                </td>
-            </tr>
-            <tr>
-                <td>                        
-                    <input type="submit" value="Guardar">
-                </td>
-            </tr>
-        </table>
-    </form>
-</fieldset>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>clase5</title>
+</head>
+
+<body>
+    <h1>CREAR CUENTA</h1>
+    <fieldset>
+        <legend>
+            Informaci&oacute;n Personal
+        </legend>
+        <form>
+            <br>            
+            <label>Nombre *</label>
+            <input type="text" name="nombre">
+            <label>Apellido *</label>
+            <input type="text" name="apellido" placeholder="lópez">
+            <br>
+            <label>Direccion de email *</label>
+            <input type="email" name="email" placeholder="mail@mail.com">
+            <br>
+            <label>Nro de Documento *</label>
+            <input type="text" name="apellido" placeholder="xxxxxxxx">
+            <br>
+
+            <!--solo numeros-->
+            <label>Edad</label>
+            <input type="number" min="0" max="999">
+            <br>
+            <label>Adherirse al boletín de novedades</label>
+            <input type="checkbox" name ="adh" value="SI" checked>
+            <br>
+
+            <label>Casado</label>
+            <span>SI</span>
+            <input type="radio" name="casado" value="SI">
+            <span>NO</span>
+            <input type="radio" name="casado" value="NO" checked>
+            <br>
+
+            <label>Cantidad</label>
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <br>
+            <input type="submit" value="ENVIAR">
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Form con tabla</legend>
+        <form action="../clase4/index.html" method="POST">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <label>Direccion de email *</label><br>
+                        <input type="email" name="email" placeholder="mail@mail.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Nombre *</label><br>
+                        <input type="text" name="nombre" maxlength="100">
+                    </td>
+                    <td>
+                        <label>Apellido *</label><br>
+                        <input type="text" name="apellido" placeholder="lópez">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Nro de Documento *</label><br>
+                        <input type="number" name="dni" min="0" max="999999999">
+                    </td>
+                </tr>
+                <tr>
+                    <td>                        
+                        <input type="submit" value="Guardar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+
+</html>
